@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>CONSULTA</title>
+</head>
+<body>
+    <div class="containerConsulta">
+        <div class="row">
+            <img class="logoConsulta" src="logo.png">
+            <h1 class="titulo">SUPORTE AO USUÁRIO</h1>
+        </div> 
+        <div class="divConsulta">
+            <label class="labelConsulta">Informe o seu CPF:</label>
+            <input type="text" name="cpf" id="cpf" maxlength="11" required />
+            <button onclick="verificarUsuario() " class="btnprincipal">Liberar acesso</button>
+        
+        </div>
+        <div id="divTabela">
+            <table id="tabelaCliente">
+                <thead>
+                    <tr>
+                        <th style="width: 25em;">Nome</th>
+                        <th style="width: 10em;">Setor</th>
+                        <th style="width: 20em;">Descrição</th>
+                        <th style="width: 12em;">Data</th>
+                        <th style="width: 15em;">Status</th>
+                    </tr>
+                </thead>
+                <tbody id="dados_tabela">
+                </tbody>
+            </table>
+        </div>
+        <script src="script.js"></script>     
+    </div> 
+</body>
+</html>

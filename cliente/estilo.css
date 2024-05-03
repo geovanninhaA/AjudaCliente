@@ -1,0 +1,277 @@
+*{
+    padding: 0;
+    margin:0;
+}
+body {
+    background-color: #021C2E;
+    color: #FFF;
+}
+html {
+	scroll-behavior: smooth;
+}
+p{
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.logo{
+    display:flex;
+    justify-content: flex-start;
+}
+.botao{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.titulo{    
+    display: flex;
+    justify-content: center;
+    padding: 10%;
+    margin-top: 5%;
+    font-size: 50px;
+    align-items: center;
+}
+.container{
+    display: flex;    
+    flex-direction: column;
+    text-align: center;
+    padding: 2%  5% ;   
+}
+.row{
+    display: flex;    
+   padding-right: 10%;
+   padding-top: 6%;
+   padding-bottom: 6%;
+}
+.divCadastro{
+    justify-content: center;
+}
+label, #setor, #descricao {
+   
+    display: block;
+    font-size: 140%      
+}
+.btncadastro{
+    border: 5px rgba(155, 51, 3, 0.829) solid;    
+    line-height: 50px;
+    background-color: rgba(209, 51, 15, 0.992);
+    width:30% ;
+    border-radius: 5%;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    color: #FFF;
+    font-size: 20px;
+}
+.btncadastro:hover{ 
+    border: 5px  rgba(8, 226, 226, 0.678)solid;        
+    width:30% ;
+    background-color: rgba(8, 226, 226, 0.839);
+    height: 100%;
+}
+.form placeholder{
+    color: #FFF;
+}
+*/
+.logo {
+    width: 20%;
+    height: 20%;
+    margin: 5%;
+}
+#formulario { 
+    border-radius: 2%;
+    border: 5px orangered solid;
+    margin: 2.3%;
+    padding: 7% 5%; 
+    color: #FFF;
+    align-items: center; 
+    
+}
+input{
+    border: 5px orangered solid;
+    border-radius: 3%;
+    padding: 2%;
+    margin:2%;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border: 4px rgba(37, 148, 148, 0.839) solid;
+    background-color: rgba(37, 148, 148, 0.839);
+    font-size: 20px;
+    color: #FFF;
+}
+input::placeholder{
+    color: #FFF
+}
+#problema{
+    height: 200px;
+}
+#resultado{
+    gap: 20px;
+    padding: 5%;
+ 
+}
+/*-------SISTEMA ENTRADA--------*/
+.bodySistema{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 30px;
+    padding-bottom: 200px;
+    transition: slide;
+    animation-duration: 3s;
+    animation-name: sliden;   
+}
+.tituloEntrada{
+    padding-top: 20%;
+    padding-bottom: 30%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 12% ;
+    margin-top: 5%;
+    font-size: 50px;
+    align-items: center;
+   
+}
+.pSistema{
+    padding-bottom: 5%;
+    font-size: 18px;
+}
+@keyframes sliden {
+    from {
+      margin-left: 100%;
+      width: 100%
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 98%;
+    }
+  }
+.logoSistema{
+    padding: 3% 20%;
+    text-align: center;
+    justify-content: center; 
+}
+#formularioSistema{
+    display: flex;
+    justify-content: center; 
+    text-align: center;
+    gap: 30px;
+    flex-direction: row;
+    width: 100%;
+    height: 50px;
+}
+.btnprincipal{
+    border: 5px rgba(155, 51, 3, 0.829) solid;    
+    background-color: rgba(209, 51, 15, 0.992);
+    width:30% ;
+    line-height: 50px;
+    border-radius: 5%;
+    color: #FFF;
+    font-size: 20px;
+
+} 
+/* .btnprincipal:hover{
+    border: 5px rgba(155, 51, 3, 0.829) solid; 
+    background-color: rgba(209, 51, 15, 0.785);
+    width:30% ;
+    height: 100%;
+} */
+/*CONSULTA-------------------------------------------------------------*/
+.containerConsulta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+.logoConsulta {
+    padding-left: 10%;
+    width: 35%;
+}
+.labelConsulta {
+    padding-top: 4% ;
+
+    justify-content:center; 
+    display: flex;
+}
+.btnprincipal{
+    width: 300px;
+    line-height: 50px;
+    margin: 1.5%;
+    background-color: rgba(209, 51, 15, 0.992);
+    height: 100%;
+    border-radius: 5%;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    color: #FFF;
+    font-size: 20px;
+} 
+.btnprincipal:hover{
+   background-color: rgba(209, 51, 15, 0.785);
+} 
+.divConsulta{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+/* CONSULTA---------------------*/
+#divTabela{
+    width: 90vw;
+    min-height: 400px;
+    margin: 10 auto;
+    border: 3px solid rgba(196, 47, 13, 0.769);
+    border-radius: 10px;
+    padding: 0;
+    margin-top: 30px;
+}
+#tabelaCliente{  
+    background-color: rgba(196, 47, 13, 0.769);
+    color: #f9f5f5;
+    justify-content: center;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+thead{
+    padding: 8px;
+}
+
+td, th{
+    padding: 8px;
+    border-right: 1px white solid;
+}
+
+th{
+    border-bottom: 1px white solid;
+}
+
+td:last-child, th:last-child{
+    border-right: none;
+}
+.titulo{
+    gap: 30px;
+    font-size: 32px;
+}
+.row{
+    padding: 3%;
+
+}
+button{
+    background-color: rgba(7, 176, 176, 0.839);
+    transition: background-color 0.3s, box-shadow 0.3s;
+    border:  rgb(6, 144, 144);
+    display: inline-block;
+    flex-direction: column;   
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+button:hover{
+    border: #021C2E;
+    background-color: rgba(0, 230, 251, 0.869);
+
+   
+}
+

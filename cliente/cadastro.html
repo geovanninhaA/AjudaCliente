@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>CADASTRO</title>
+</head>
+<body>
+    <div class="container">
+       <div class="row">
+           <img class="logo" src="logo.png">
+           <h1 class="titulo">SUPORTE AO USUÁRIO</h1>
+       </div>
+            
+        <form id="formulario" method="post" onsubmit="enviarDados(event)">
+            <div class="form">
+                <label for="nome">Nome completo do usuário:</label>
+                <input type="text" name="nome" id="nome" placeholder="Digite aqui..." required /><br><br>
+            </div>
+            <div class="form">
+                <label for="cpf">Insira o CPF (Somente os números):</label>
+                <input type="text" name="cpf" id="cpf" placeholder="Somente números..." length="11" required onblur="validaCPF()" /><br><br>  
+            </div>  
+            <div class="form">
+                <label for="cpf">Insira o seu setor:</label>
+                <input type="text" name="setor" id="setor" placeholder="Setor" required/><br>
+                <label for="descricao">Descrição</label>
+                <input type="text" name="descricao" id="descricao" placeholder="Descrição do problema" required > <br>
+            </div>
+            <button type="submit" class="btncadastro">Enviar</button>
+            <script src="script.js"></script>
+        </form> 
+    </div> 
+</body>
+</html>
