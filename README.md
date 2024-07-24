@@ -1,6 +1,6 @@
 ### Esse é um projeto feito em sala no **SENAI**, com o auxílio dos professores!
 
-### Consiste no uso de uma API feita no Python, JavaScript e HTML e CSS
+### Consiste no uso de uma API feita no Python. Além  dissi usei JavaScript,  HTML e CSS
 <br><br>
 ### Segue abaixo o projeto😺 ⬇️
 
